@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vertical Slider</title>
+  <style>
+    body {
+      margin: 0;
+      background: #000;
+      overflow: hidden;
+    }
+    .slider-wrapper {
+      height: 100vh;
+      overflow: hidden;
+      position: relative;
+    }
+    .slider-track {
+      display: flex;
+      flex-direction: column;
+      animation: scrollUp 30s linear infinite;
+    }
+    .slide {
+      height: 100vh;
+      background-size: cover;
+      background-position: center;
+    }
+    @keyframes scrollUp {
+      0% {
+        transform: translateY(0%);
+      }
+      100% {
+        transform: translateY(-50%);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="slider-wrapper">
+    <div class="slider-track">
+      <div class="slide" style="background-image: url('images/8F0A6884.jpg')"></div>
+<div class="slide" style="background-image: url('images/8F0A3103.jpg')"></div>
+<div class="slide" style="background-image: url('images/8F0A3087-2.jpg')"></div>
+<div class="slide" style="background-image: url('images/20241123-8F0A1423.jpg')"></div>
+<div class="slide" style="background-image: url('images/20241125-8F0A4389.jpg')"></div>
+<div class="slide" style="background-image: url('images/20241125-8F0A5038.jpg')"></div>
+<div class="slide" style="background-image: url('images/20241125-8F0A5089.jpg')"></div>
+<div class="slide" style="background-image: url('images/20241125-8F0A5768.jpg')"></div>
+<div class="slide" style="background-image: url('images/20241125-8F0A5944.jpg')"></div>
+<div class="slide" style="background-image: url('images/20241125-8F0A5972.jpg')"></div>
+
+      <div class="slide" style="background-image: url('images/8F0A6884.jpg')"></div>
+<div class="slide" style="background-image: url('images/8F0A3103.jpg')"></div>
+<div class="slide" style="background-image: url('images/8F0A3087-2.jpg')"></div>
+<div class="slide" style="background-image: url('images/20241123-8F0A1423.jpg')"></div>
+<div class="slide" style="background-image: url('images/20241125-8F0A4389.jpg')"></div>
+<div class="slide" style="background-image: url('images/20241125-8F0A5038.jpg')"></div>
+<div class="slide" style="background-image: url('images/20241125-8F0A5089.jpg')"></div>
+<div class="slide" style="background-image: url('images/20241125-8F0A5768.jpg')"></div>
+<div class="slide" style="background-image: url('images/20241125-8F0A5944.jpg')"></div>
+<div class="slide" style="background-image: url('images/20241125-8F0A5972.jpg')"></div>
+ <!-- repeated for loop -->
+    </div>
+  </div>
+</body>
+</html>
